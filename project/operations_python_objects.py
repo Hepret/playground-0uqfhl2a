@@ -1,6 +1,5 @@
 import math
 
-
 def square(in_put):
     if isinstance(in_put,(int,float,long)):
         value = in_put * in_put
