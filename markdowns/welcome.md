@@ -52,22 +52,52 @@ class Transform:
 
 ## Using Pytests for testing above operations : this content is saved as test_operations_python_objects.py under project Directory
 
-<iframe src="https://tech.io/snippet-widget/wYJufUl" width="100%" frameborder="0" scrolling="no" allowtransparency="true" >
-</iframe>
-<script>
-  if (typeof window.techioScriptInjected === 'undefined') {
-    window.techioScriptInjected = true;
-    var script = document.createElement('script');
-    script.src = 'https://files.codingame.com/codingame/iframe-v-1-4.js';
-    (document.head || document.body).appendChild(script);
-  }
-</script>
+import pytest
+from operations_python_objects import Transform
+
+
+@pytest.fixture(scope='function')
+def initi():
+    obj = Transform()
+    return obj
+
+@pytest.mark.parametrize("in_put,out_put",[
+    ('factorial;5',120),
+    ('factorial;[1,2,3]',[1,2,6]),
+    ("factorial;{'a':1,'b':2,'c':3}",{'a': 1,'b': 2,'c': 6}),
+
+    ('cube;5',125),('cube;[1,2,3]',[1,8,27]),
+    ("cube;{'a':1,'b':2,'c':3}",{'a': 1,'b': 8,'c': 27}),
+
+    ('square;5',25),
+    ('square;[1,2,3]',[1,4,9]),
+    ("square;{'a':1,'b':2,'c':3}",{'a': 1,'b': 4,'c': 9})
+])
+def test_operations(initi,in_put,out_put):
+    in_put1 = in_put.split(';')[0]
+    in_put2 = in_put.split(';')[1]
+    op = initi.execute(in_put1,eval(in_put2))
+    assert op==out_put
+    
 
 ## Finally, the running Py tests is very as you just have to goto terminal and run 'pytest -v' 
 ## Sample run looks as below:
-'''
-collected 2 items                                                                                                                             
-test_functions.py::test_operations[square;5-25] PASSED                                                                                  [ 50%]
-test_functions.py::test_operations[factorial;[1,2,3]-out_put1] PASSED                                                                   [100%]
-================================================= 2 passed in 0.04 seconds
-'''
+(venv) indu-retina:project indu.sharma$ py.test -v         
+============================================================= test session starts =============================================================
+platform darwin -- Python 2.7.10, pytest-3.5.0, py-1.5.3, pluggy-0.6.0 -- /Users/indu.sharma/PycharmProjects/Practice/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/indu.sharma/Desktop/playground-cd9ep28h/project, inifile:
+plugins: incremental-0.4.2
+collected 9 items                                                                                                                             
+
+test_operations_python_objects.py::test_operations[factorial;5-120] PASSED                                                              [ 11%]
+test_operations_python_objects.py::test_operations[factorial;[1,2,3]-out_put1] PASSED                                                   [ 22%]
+test_operations_python_objects.py::test_operations[factorial;{'a':1,'b':2,'c':3}-out_put2] PASSED                                       [ 33%]
+test_operations_python_objects.py::test_operations[cube;5-125] PASSED                                                                   [ 44%]
+test_operations_python_objects.py::test_operations[cube;[1,2,3]-out_put4] PASSED                                                        [ 55%]
+test_operations_python_objects.py::test_operations[cube;{'a':1,'b':2,'c':3}-out_put5] PASSED                                            [ 66%]
+test_operations_python_objects.py::test_operations[square;5-25] PASSED                                                                  [ 77%]
+test_operations_python_objects.py::test_operations[square;[1,2,3]-out_put7] PASSED                                                      [ 88%]
+test_operations_python_objects.py::test_operations[square;{'a':1,'b':2,'c':3}-out_put8] PASSED                                          [100%]
+
+========================================================== 9 passed in 0.03 seconds ===========================================================
