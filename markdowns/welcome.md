@@ -1,8 +1,6 @@
 ## Lets create some generetic math operations on different python data types : this content is saved as operations_python_objects.py under project Directory
 
-
 import math
-
 
 def square(in_put):
     if isinstance(in_put, (int,float,long)):
