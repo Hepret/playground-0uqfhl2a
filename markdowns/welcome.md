@@ -79,5 +79,11 @@ def test_operations(initi,in_put,out_put):
     assert op==out_put
     
 
-## Finally, the running Py tests is very as. From commandline  just run 'pytest -v' 
-
+## Finally, the running Py tests is very as you just have to goto terminal and run 'pytest -v' 
+## Sample run looks as below:
+'''
+collected 2 items                                                                                                                             
+test_functions.py::test_operations[square;5-25] PASSED                                                                                  [ 50%]
+test_functions.py::test_operations[factorial;[1,2,3]-out_put1] PASSED                                                                   [100%]
+================================================= 2 passed in 0.04 seconds
+'''
