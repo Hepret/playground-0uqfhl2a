@@ -4,7 +4,7 @@ plan:
   statement: markdowns/welcome.md
 projects:
   python:
-    root: /python-project
+    root: /project
     runner:
       name: python
       version: '3'
