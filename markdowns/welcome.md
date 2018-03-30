@@ -52,7 +52,16 @@ class Transform:
 
 ## Using Pytests for testing above operations : this content is saved as test_operations_python_objects.py under project Directory
 
-https://tech.io/snippet/wYJufUl
+<iframe src="https://tech.io/snippet-widget/wYJufUl" width="100%" frameborder="0" scrolling="no" allowtransparency="true" style="visibility: hidden">
+</iframe>
+<script>
+  if (typeof window.techioScriptInjected === 'undefined') {
+    window.techioScriptInjected = true;
+    var script = document.createElement('script');
+    script.src = 'https://files.codingame.com/codingame/iframe-v-1-4.js';
+    (document.head || document.body).appendChild(script);
+  }
+</script>
 
 ## Finally, the running Py tests is very as you just have to goto terminal and run 'pytest -v' 
 ## Sample run looks as below:
