@@ -86,6 +86,7 @@ def test_operations(initi,in_put,out_put):
 (venv) indu-retina:project indu.sharma$ py.test -v         
 ===================================== test session starts ======================================================                                                                          
 *Test cases* | *Status* | *percentage*
+--------------------------------------------------------------------| ------------------------|-----------------
 test_operations_python_objects.py::test_operations[factorial;5-120] |PASSED | [ 11%]
 test_operations_python_objects.py::test_operations[factorial;[1,2,3]-out_put1] |PASSED |[ 22%]
 test_operations_python_objects.py::test_operations[factorial;{'a':1,'b':2,'c':3}-out_put2] |PASSED  |[ 33%]
