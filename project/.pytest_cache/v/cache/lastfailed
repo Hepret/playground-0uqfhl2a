@@ -1,0 +1,4 @@
+{
+  "test_operations_python_objects.py::test_operations[factorial;{a:1,b:2,c:3}-out_put2]": true, 
+  "test_universe.py": true
+}

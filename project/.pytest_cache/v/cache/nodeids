@@ -1,0 +1,11 @@
+[
+  "test_operations_python_objects.py::test_operations1[factorial;5-120]", 
+  "test_operations_python_objects.py::test_operations1[factorial;[1,2,3]-out_put1]", 
+  "test_operations_python_objects.py::test_operations1[factorial;{'a':1,'b':2,'c':3}-out_put2]", 
+  "test_operations_python_objects.py::test_operations2[cube;5-125]", 
+  "test_operations_python_objects.py::test_operations2[cube;[1,2,3]-out_put1]", 
+  "test_operations_python_objects.py::test_operations2[cube;{'a':1,'b':2,'c':3}-out_put2]", 
+  "test_operations_python_objects.py::test_operations3[square;5-25]", 
+  "test_operations_python_objects.py::test_operations3[square;[1,2,3]-out_put1]", 
+  "test_operations_python_objects.py::test_operations3[square;{'a':1,'b':2,'c':3}-out_put2]"
+]
