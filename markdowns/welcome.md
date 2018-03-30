@@ -1,4 +1,4 @@
-## Lets create some generetic math operations on different python data types : this content is saved as operations_python_objects.py under project Directory
+## Lets create some generic math operations on different python data types : this content is saved as operations_python_objects.py under project Directory
 
 import math
 
