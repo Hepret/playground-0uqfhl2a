@@ -77,4 +77,7 @@ def test_operations(initi,in_put,out_put):
     in_put2 = in_put.split(';')[1]
     op = initi.execute(in_put1,eval(in_put2))
     assert op==out_put
+    
+
+## Finally, the running Py tests is very as. From commandline  just run 'pytest -v' 
 
