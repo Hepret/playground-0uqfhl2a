@@ -1,4 +1,4 @@
-title: Python Project
+title: Using Pytest Parametrize for unit testing in Python
 plan:
 - title: First contributions.
   statement: markdowns/welcome.md
