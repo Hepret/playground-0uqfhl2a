@@ -1,4 +1,4 @@
-title: Using Pytest Parametrize for unit testing in Python
+title: Using Pytest Parametrize for testing
 plan:
 - title: First contributions.
   statement: markdowns/welcome.md
