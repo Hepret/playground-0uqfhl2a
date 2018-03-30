@@ -80,6 +80,11 @@ def test_operations(initi,in_put,out_put):
     assert op==out_put
 
 ```
+```
+<iframe width="100%" frameborder="0" scrolling="no" allowtransparency="true" style="visibility: hidden" src="https://tech.io/playground-widget/1460683cd291f533c5abee283e22415c41601/introduction/140503/setUp()%20executed%20before%20each%20test%20!"></iframe>
+<script>if(typeof window.techioScriptInjected==="undefined"){window.techioScriptInjected=true;var d=document,s=d.createElement("script");s.src="https://files.codingame.com/codingame/iframe-v-1-4.js";(d.head||d.body).appendChild(s);}</script>
+
+```
 
 ## Finally, running the Py tests is very easy as you just have to goto terminal and run 'pytest -v' 
 
