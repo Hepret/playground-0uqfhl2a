@@ -1,4 +1,4 @@
-## Lets create some generic math operations on different python data types : this content is saved as operations_python_objects.py under project Directory
+## Lets create some generic math operations on different python data types. 
 ```
 import math
 
@@ -50,7 +50,7 @@ class Transform:
         return eval(method)(params)
 ```
 
-## Using Pytests for testing above operations : this content is saved as test_operations_python_objects.py under project Directory
+## Lets write the pytests code for testing above functions.
 ```
 import pytest
 from operations_python_objects import Transform
@@ -81,9 +81,9 @@ def test_operations(initi,in_put,out_put):
 
 ```
 
-## Finally, the running Py tests is very as you just have to goto terminal and run 'pytest -v' 
+## Finally, running the Py tests is very easy as you just have to goto terminal and run 'pytest -v' 
 
-*Test cases* | *Status* | *percentage*
+*Test Cases*                                                        | *Status*               | *percentage*
 
 
 --------------------------------------------------------------------| ------------------------|-----------------
