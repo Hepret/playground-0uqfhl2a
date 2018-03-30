@@ -52,7 +52,7 @@ class Transform:
 
 ## Using Pytests for testing above operations : this content is saved as test_operations_python_objects.py under project Directory
 
-<iframe src="https://tech.io/snippet-widget/wYJufUl" width="100%" frameborder="0" scrolling="no" allowtransparency="true" style="visibility: hidden">
+<iframe src="https://tech.io/snippet-widget/wYJufUl" width="100%" frameborder="0" scrolling="no" allowtransparency="true" >
 </iframe>
 <script>
   if (typeof window.techioScriptInjected === 'undefined') {
