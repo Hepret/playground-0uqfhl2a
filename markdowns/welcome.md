@@ -82,10 +82,10 @@ def test_operations(initi,in_put,out_put):
 ```
 
 ## Finally, the running Py tests is very as you just have to goto terminal and run 'pytest -v' 
-## Sample run looks as below:
-(venv) indu-retina:project indu.sharma$ py.test -v         
-===================================== test session starts ======================================================                                                                          
+
 *Test cases* | *Status* | *percentage*
+
+
 --------------------------------------------------------------------| ------------------------|-----------------
 test_operations_python_objects.py::test_operations[factorial;5-120] |PASSED | [ 11%]
 test_operations_python_objects.py::test_operations[factorial;[1,2,3]-out_put1] |PASSED |[ 22%]
@@ -97,4 +97,5 @@ test_operations_python_objects.py::test_operations[square;5-25] |PASSED    |    
 test_operations_python_objects.py::test_operations[square;[1,2,3]-out_put7] |PASSED  | [ 88%]
 test_operations_python_objects.py::test_operations[square;{'a':1,'b':2,'c':3}-out_put8]| PASSED       | [100%]
 
-===================================== 9 passed in 0.03 seconds===================================================
+
+#9 Test Cases passed in 0.03 seconds
